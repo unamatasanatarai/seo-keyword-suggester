@@ -28,20 +28,7 @@ EOF;
 
 
 
-//set the length of keywords you like
-$params['min_word_length'] = 5;  //minimum length of single words
-$params['min_word_occur'] = 2;  //minimum occur of single words
-
-$params['min_2words_length'] = 3;  //minimum length of words for 2 word phrases
-$params['min_2words_phrase_length'] = 10; //minimum length of 2 word phrases
-$params['min_2words_phrase_occur'] = 2; //minimum occur of 2 words phrase
-
-$params['min_3words_length'] = 3;  //minimum length of words for 3 word phrases
-$params['min_3words_phrase_length'] = 10; //minimum length of 3 word phrases
-$params['min_3words_phrase_occur'] = 2; //minimum occur of 3 words phrase
-
-$keyword = new SeoKeywordSuggest($params);
-$keyword->setStopWords(PL::get())->setContent($data);
+$keyword = (new SeoKeywordSuggest())->setStopWords(PL::get())->setContent($data);
 
 echo "KEYWORDS\n";
 echo "------------\n\n";

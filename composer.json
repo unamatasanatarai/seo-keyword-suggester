@@ -1,0 +1,22 @@
+{
+    "name": "unamatasanatarai/seo-keyword-suggester",
+    "type": "library",
+    "description": "Suggest keywords based on content",
+    "homepage": "https://github.com/unamatasanatarai/seo-keyword-suggester",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Unamata Sanatarai",
+            "email": "unamatasanatarai@gmail.com",
+            "homepage": "https://github.com/unamatasanatarai/",
+            "role": "Main Protagonist"
+        }
+    ],
+    "autoload": {
+        "psr-4":{
+            "Unamatasanatarai\\SeoKeywordSuggest\\" : "src/Unamatasanatarai/SeoKeywordSuggest/"
+        }
+    },
+    "minimum-stability": "dev"
+}

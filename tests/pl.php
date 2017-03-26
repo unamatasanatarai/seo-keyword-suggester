@@ -1,7 +1,7 @@
 <?php
 
 use Unamatasanatarai\SeoKeywordSuggest\SeoKeywordSuggest;
-use Unamatasanatarai\SeoKeywordSuggest\Stopwords\EN;
+use Unamatasanatarai\SeoKeywordSuggest\Stopwords\PL;
 
 include __DIR__ . '/../vendor/autoload.php';
 
@@ -41,7 +41,7 @@ $params['min_3words_phrase_length'] = 10; //minimum length of 3 word phrases
 $params['min_3words_phrase_occur'] = 2; //minimum occur of 3 words phrase
 
 $keyword = new SeoKeywordSuggest($params);
-$keyword->setStopWords(EN::get())->setContent($data);
+$keyword->setStopWords(PL::get())->setContent($data);
 
 echo "KEYWORDS\n";
 echo "------------\n\n";
